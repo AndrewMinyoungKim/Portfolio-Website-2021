@@ -1,0 +1,283 @@
+/* Home, Contact, Skills, Experience, Projects, Education, Awards, More */
+
+/* Navbar, Intro, Contact, Skills, Experience, Side Projects, Education, Distinctions, Hobbies */
+/* Each one has mobile support after it */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+
+.navbar {
+    background-color: #131313;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar__container {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    /* width: 100%; */
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+.navbar__menu {
+    display: flex; /*horizontal display*/
+    align-items: center; /*move to center of navbar*/
+    list-style: none; /*gets rid of bullet points in navbar*/
+}
+
+.navbar__item {
+    height: 80px;
+}
+
+.navbar__links {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 125px;
+    text-decoration: none; /*gets rid of underlines*/
+    height: 100%; /*centers words??*/
+    transition: all 0.3s ease; /*words slowly come in and zoom in*/
+}
+
+.navbar__links:hover {
+    color: #9518fc;
+    /* transition: all 0.3s ease; */
+}
+
+.highlight {
+    border-bottom: 4px solid rgb(132, 0, 255);
+}
+
+/* Navbar Mobile Support */
+
+@media screen and (max-width: 960px) {
+    .navbar__container { /*same as above*/
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        z-index: 1;
+        width: 100%; /*bring navbar dropdown to the center*/
+        max-width: 1300px;
+        margin: 0 auto;
+        padding: 0 50px;
+    }
+
+    .navbar__menu {
+        display: grid; /*navbar becomes vertical*/
+        grid-template-columns: auto;
+        margin: 0;
+        width: 100%;
+        position: absolute;
+        top: -1000px; /*?*/
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: -1;
+        background: #131313;
+    }
+
+    .navbar__menu.active {
+        background: #131313;
+        top: 100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 99;
+        height: 80vh; /*size of black dropdown box*/
+        font-size: 1.6rem;
+    }
+
+    .navbar__toggle .bar {
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        transition: all 0.3s ease-in-out;
+        background: #fff;
+    }
+
+    .navbar__item {
+        width: 100%;
+    }
+
+    .navbar__links {
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+    }
+
+    #mobile-menu {
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        transform: translate(5%, 20%);
+    }
+
+    .navbar__toggle .bar {
+        display: block;
+        cursor: pointer;
+    }
+
+    #mobile-menu.is-active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    #mobile-menu.is-active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    #mobile-menu.is-active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+/* Intro */
+.intro {
+    background: #000000;
+    background: linear-gradient(to right, #161616, #000000);
+    padding: 200px 0;
+}
+
+.intro__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 90%;
+    text-align: center;
+    padding: 30px;
+}
+
+.intro__img--container {
+    text-align: center;
+}
+
+.intro__img {
+    height: 80%;
+    width: 80%;
+}
+
+.intro__heading {
+    font-size: 100px;
+    margin-bottom: 24px;
+    /* color: #fff; */
+    background: #355C7D;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.intro__description {
+    font-size: 2rem;
+    background: #da22ff;
+    background: -webkit-linear-gradient(to right, #9114ff, #da22ff);
+    background: linear-gradient(to right, #8f0eff, #da22ff);
+
+    /* to apply to letters and get rid of background */
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.highlight { /*?*/
+    border-bottom: 4px solid rgb(132, 0, 255);
+}
+
+/* Intro Mobile Support */
+
+@media screen and (max-width: 768px) {
+    .intro__heading {
+        font-size: 60px;
+    }
+
+    .intro__description {
+        font-size: 40px;
+    }
+}
+
+/* Contact */
+
+.contact {
+    background: #8f0eff;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 2rem 10rem;
+}
+
+.contact h1 {
+    background-color: #8f0eff;
+    background-image: linear-gradient(to right, #ff0763 0%, #f7685c 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    margin-bottom: 2.5rem;
+    font-size: 5rem;
+}
+
+.contact h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+.contact__container {
+    transition: 0.3s ease-in;
+}
+
+.contact__container:hover {
+    transform: scale(1.075);
+    transition: 0.3s ease-in;
+}
+
+/* Contact Mobile Support */
+
+@media screen and (max-width: 768px) {
+    .contact__container {
+        font-size: 60px;
+    }
+}
+
+/* Skills */
+
+.skills {
+    background-color: #161616;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.skills__list {
+    list-style: none;
+}
