@@ -19,16 +19,29 @@ const highlightMenu = () => {
     const awardsMenu = document.querySelector('#awards-page')
     const moreMenu = document.querySelector('#more-page')
     let scrollPos = window.scrollY
+    console.log(scrollPos)
 
-    if(window.innerWidth > 960 && scrollPos < 600) {
-        // removeHighlightMenu()
-        homeMenu.classList.add('.highlight')
-    }else if(window.innerWidth > 960 && scrollPos < 600) {
-        // removeHighlightMenu()
-        contactMenu.classList.add('.highlight')
+    if(window.innerWidth > 960 && scrollPos < 800) {
+        removeHighlightMenu()
+        homeMenu.classList.add('highlight')
+        return
+    }else if(window.innerWidth > 960 && scrollPos < 1300) {
+        removeHighlightMenu()
+        contactMenu.classList.add('highlight')
+        return
+    }else if(window.innerWidth > 960 && scrollPos < 1700) {
+        removeHighlightMenu()
+        skillsMenu.classList.add('highlight')
+        return
     }
-}
 
+    if((elem && window.innerWidth < 960 && scrollPos < 600) || elem) {
+        elem.classList.remove('highlight')
+    }
+};
+
+window.addEventListener('scroll', highlightMenu)
+window.addEventListener('click', highlightMenu)
 
 const removeHighlightMenu = () => {
     const elem = document.querySelector('.highlight')
@@ -49,10 +62,9 @@ const removeHighlightMenu = () => {
     educationMenu.classList.remove('highlight')
     awardsMenu.classList.remove('highlight')
     moreMenu.classList.remove('highlight')
-}
+};
 
-window.addEventListener('scroll', highlightMenu)
-window.addEventListener('click', highlightMenu)
+
 
 const hideMobileMenu = () => {
     const menuBars = document.querySelector('.is-active')
