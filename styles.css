@@ -11,10 +11,15 @@
     scroll-behavior: smooth;
 }
 
+/* div {
+    display: flex;
+    justify-content: center;
+} */
+
 /* Navbar */
 
 .navbar {
-    background-color: #131313;
+    background-color: #000;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -230,7 +235,7 @@
 }
 
 .contact h1 {
-    background-color: #8f0eff;
+    background-color: #fff;
     background-image: linear-gradient(to right, #ff0763 0%, #f7685c 100%);
     background-size: 100%;
     -webkit-background-clip: text;
@@ -278,8 +283,8 @@
 /* Skills */
 
 .skills {
-    background-color: #161616;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -291,8 +296,79 @@
     list-style: none;
 }
 
-@media screen and (max-width: 768px) {
+.skills__container {
+    background-color: #000;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.skills__card {
+    background-color: #f7685c;
+    color: #fff;
+    margin: 7.5rem;
+    padding: 1.2rem;
+    height: auto;
+    width: max-width;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.3s ease-in;
+}
+
+.skills__card:hover {
+    /* Increase Box Size When Hovering Over */
+    transform: scale(1.075);
+    transition: 0.3s ease-in;
+}
+
+.skills__img {
+    padding: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills__png {
+    height: auto;
+    width: 8rem;
+}
+
+.skills h1 {
+    font-size: 5rem;
+    padding: 2rem;
+}
+
+.skills__container h3 {
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 1350px) {
+    .skills__card {
+        margin: 4.5rem;
+        padding: 1.2rem;
+    }
+
     .skills__container {
+        grid-template-columns: 1fr 1fr;
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .skills__card {
+        margin: 1.5rem;
+        padding: 1.2rem;
+    }
+
+    .skills__container {
+        grid-template-columns: 1fr 1fr;
         font-size: 60px;
     }
 }
@@ -300,16 +376,45 @@
 /* Experience */
 
 .experience {
-    background-color: #8f0eff;
+    background-color: #fff;
     color:rgb(132, 255, 255);
 }
 
-.experience__wrapper {
+.experience__container {
+    background-color: #000;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-decoration: none;
+}
+
+.experience h1 {
+    font-size: 5rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.experience__card {
+    margin: 2rem;
+}
+
+.experience__card h2 {
+    margin: 1.1rem;
+    font-size: 2.5rem;
+}
+
+.experience__card h3 {
+    margin: 1.1rem;
+    font-size: 2rem;
+}
+
+.experience__detail {
+    margin: 1.1rem;
+    font-size: 1.25rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -322,7 +427,32 @@
 
 .projects {
     color:#9518fc;
-    background-color: #ff0763;
+    background-color: #fff;
+}
+
+.projects h1 {
+    font-size: 5rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects__container {
+    background-color: #000;
+}
+
+.projects__item h2 {
+    font-size: 2.5rem;
+    padding: 1.5rem;
+    margin: 1.2rem;
+}
+
+.projects__item p {
+    font-size: 1.8rem;
+    padding: 1.5rem;
+    margin: 1.2rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -335,7 +465,38 @@
 
 .education {
     color:#9518fc;
-    background-color: #ff0763;
+    background-color: #fff;
+}
+
+.education h1 {
+    font-size: 5rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.education__container {
+    background-color: #000;
+}
+
+.education__container h2 {
+    font-size: 2.5rem;
+    padding: 1.5rem;
+    margin: 1.2rem;
+}
+
+.education__container h3 {
+    font-size: 2rem;
+    padding: 1.5rem;
+    margin: 1.2rem;
+}
+
+.education__container p {
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    margin: 1.2rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -348,7 +509,32 @@
 
 .distinctions {
     color:#9518fc;
-    background-color: #ff0763;
+    background-color: #fff;
+}
+
+.distinctions h1 {
+    font-size: 5rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.distinctions__container {
+    background-color: #000;
+}
+
+.distinctions__item h2 {
+    font-size: 2.5rem;
+    padding: 1.5rem;
+    margin: 1.2rem;
+}
+
+.distinctions__item p {
+    font-size: 1.8rem;
+    padding: 1.5rem;
+    margin: 1.2rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -362,7 +548,30 @@
 
 .more {
     color:#9518fc;
-    background-color: #ff0763;
+    background-color: #fff;
+}
+
+.more h1 {
+    font-size: 5rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.more__container {
+    background-color: #000;
+}
+
+.projects__container {
+    background-color: #000;
+}
+
+.more__item p {
+    font-size: 2.5rem;
+    padding: 1.5rem;
+    margin: 1.2rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -375,7 +584,7 @@
 
 .footer__container {
     color:#9518fc;
-    background-color: #ff0763;
+    background-color: #fff;
 }
 
 @media screen and (max-width: 768px) {
