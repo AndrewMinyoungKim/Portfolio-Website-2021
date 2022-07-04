@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Andrew Kim</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="images/lightbulb.png">
+    <link rel="stylesheet" 
+        href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" 
+        integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5" 
+        crossorigin="anonymous"
+    />
 </head>
 <body>
     <!-- Navbar -->
@@ -59,18 +65,24 @@
     </div>
 
     <!-- Contact -->
-    <div class="contact">
+    <div class="contact" id="contact">
         <h1>Contact</h1>
         <div class="contact__container">
-            <h2>Email: andrew.minyoung.kim@gmail.com</h2>
+            <p>Email: andrew.minyoung.kim@gmail.com   <i class="clipboard fa-solid fa-copy" id="contact__email__clipboard"></i></p>
         </div>
         <div class="contact__container">
-            <h2>Phone: 647 466 8621</h2>
+            <p>Phone: 647 466 8621   <i class="clipboard fa-solid fa-copy" id="contact__phone__clipboard"></i></p>
+        </div>
+        <div class="contact__container">
+            <p>LinkedIn: https://www.linkedin.com/in/andrew-minyoung-kim/   <i class="clipboard fa-solid fa-copy" id="contact__linkedin__clipboard"></i></p>
+        </div>
+        <div class="contact__container">
+            <p>Github: https://github.com/AndrewMinyoungKim/   <i class="clipboard fa-solid fa-copy" id="contact__github__clipboard"></i></p>
         </div>
     </div>
 
     <!-- Skills -->
-    <div class="skills">
+    <div class="skills" id="skills">
         <h1>Skills</h1>
         <div class="skills__container">
             <ul class="skills__list">
@@ -95,14 +107,18 @@
                 <li class="skills__item">
                     <p>SQL</p>
                 </li>
+                <li class="skills__item">
+                    <p>Flask</p>
+                </li>
             </ul>
         </div>
     </div>
 
     <!-- Experience -->
-    <div class="experience">
+    <div class="experience" id="experience">
         <h1>Experience</h1>
-        <div class="experience__wrapper">
+        <!-- experience container/wrapper -->
+        <div class="experience__container">
             <div class="experience__card">
                 <h2>Software Engineering Intern</h2>
                 <h3>Advanced Micro Devices Inc. | May 2021 - April 2022</h3>
@@ -127,7 +143,7 @@
     </div>
 
     <!-- Projects -->
-    <div class="projects">
+    <div class="projects" id="projects">
         <h1>Side Projects</h1>
         <div class="projects__container">
             <div class="projects__item">
@@ -178,7 +194,7 @@
     </div>
 
     <!-- Education -->
-    <div class="education">
+    <div class="education" id="education">
         <h1>Education</h1>
         <div class="education__container">
             <div class="education__item">
@@ -191,7 +207,7 @@
     </div>
 
     <!-- Distinctions -->
-    <div class="distinctions">
+    <div class="distinctions" id="distinctions">
         <h1>Distinctions</h1>
         <div class="distinctions__container">
             <div class="distinctions__item">
@@ -205,7 +221,7 @@
     </div>
 
     <!-- More -->
-    <div class="more">
+    <div class="more" id="more">
         <h1>Hobbies</h1>
         <div class="more__container">
             <ul class="more__list">
@@ -281,15 +297,16 @@
                     <h3>Contact</h3>
                     <a href="/page">Email</a>
                     <a href="/page">Phone</a>
-                    <a href="/page">Fax</a>
                     <a href="/page">Condensed Resume PDF</a>
+                    <a href="/page">Fax</a>
                 </div>
                 <div class="footer__link--item">
                     <h3>Social Media</h3>
-                    <a href="/page">LinkedIn</a>
-                    <a href="/page">Facebook</a>
-                    <a href="/page">Instagram</a>
-                    <a href="/page">Twitter</a>
+                    <a href="https://www.linkedin.com/in/andrew-minyoung-kim/" class="social__icon" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <a href="https://github.com/AndrewMinyoungKim" class="social__icon" target="_blank"><i class="fab fa-github"></i> Github</a>
+                    <a href="/page" class="social__icon" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+                    <a href="/page" class="social__icon" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+                    <a href="/page" class="social__icon" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
                 </div>
             </div>
         </div>

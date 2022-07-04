@@ -241,18 +241,30 @@
     font-size: 5rem;
 }
 
-.contact h2 {
+.contact p {
     margin-bottom: 1.5rem;
     font-size: 2rem;
 }
 
+.clipboard {
+    max-width: 100%;
+    height:auto;
+    transition: 0.05s ease-in;
+}
+
+.clipboard:hover {
+    transform: scale(1.275);
+    transition: 0.05s ease-in;
+}
+
 .contact__container {
-    transition: 0.3s ease-in;
+    max-width: 100%;
+    height:auto;
 }
 
 .contact__container:hover {
-    transform: scale(1.075);
-    transition: 0.3s ease-in;
+    max-width: 100%;
+    height:auto;
 }
 
 /* Contact Mobile Support */
@@ -277,4 +289,97 @@
 
 .skills__list {
     list-style: none;
+}
+
+@media screen and (max-width: 768px) {
+    .skills__container {
+        font-size: 60px;
+    }
+}
+
+/* Experience */
+
+.experience {
+    background-color: #8f0eff;
+    color:rgb(132, 255, 255);
+}
+
+.experience__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    .experience__container {
+        font-size: 60px;
+    }
+}
+
+/* Side Projects / Personal Projects */
+
+.projects {
+    color:#9518fc;
+    background-color: #ff0763;
+}
+
+@media screen and (max-width: 768px) {
+    .projects__container {
+        font-size: 60px;
+    }
+}
+
+/* Education */
+
+.education {
+    color:#9518fc;
+    background-color: #ff0763;
+}
+
+@media screen and (max-width: 768px) {
+    .education__container {
+        font-size: 60px;
+    }
+}
+
+/* Distinctions */
+
+.distinctions {
+    color:#9518fc;
+    background-color: #ff0763;
+}
+
+@media screen and (max-width: 768px) {
+    .distinctions__container {
+        font-size: 60px;
+    }
+}
+
+/* Hobbies */
+/* More */
+
+.more {
+    color:#9518fc;
+    background-color: #ff0763;
+}
+
+@media screen and (max-width: 768px) {
+    .more__container {
+        font-size: 60px;
+    }
+}
+
+/* Footer */
+
+.footer__container {
+    color:#9518fc;
+    background-color: #ff0763;
+}
+
+@media screen and (max-width: 768px) {
+    .footer__container {
+        font-size: 60px;
+    }
 }

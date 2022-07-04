@@ -1,3 +1,5 @@
+// Navbar
+
 const menu = document.querySelector('#mobile-menu')
 const menuLinks = document.querySelector('.navbar__menu')
 
@@ -35,10 +37,14 @@ const highlightMenu = () => {
         return
     }
 
-    if((elem && window.innerWidth < 960 && scrollPos < 600) || elem) {
+    if((elem && window.innerWidth < 960 && scrollPos < 800) || elem) {
         elem.classList.remove('highlight')
     }
 };
+
+// const jump = () => {
+//     document.getElementById("#skills-page").scrollIntoView({behavior: 'smooth'});
+// };
 
 window.addEventListener('scroll', highlightMenu)
 window.addEventListener('click', highlightMenu)
@@ -75,3 +81,22 @@ const hideMobileMenu = () => {
 }
 
 menuLinks.addEventListener('click', hideMobileMenu)
+
+// Copy to Clipboard
+
+document.getElementById("contact__email__clipboard").onclick = function() {copyClipboard("andrew.minyoung.kim@gmail.com")}
+document.getElementById("contact__phone__clipboard").onclick = function() {copyClipboard("6474668621")}
+document.getElementById("contact__linkedin__clipboard").onclick = function() {copyClipboard("https://www.linkedin.com/in/andrew-minyoung-kim/")}
+document.getElementById("contact__github__clipboard").onclick = function() {copyClipboard("https://github.com/AndrewMinyoungKim")}
+
+function copyClipboard () {
+
+    copyText = arguments[0]
+
+    navigator.clipboard.writeText(copyText).then(() => {
+        window.alert("Link copied to clipboard!")
+    }, () => {
+        window.alert("Link copy failed :(")
+    });
+
+}
