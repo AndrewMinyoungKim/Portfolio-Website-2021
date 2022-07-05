@@ -1,0 +1,51 @@
+/* Side Projects / Personal Projects */
+
+.projects {
+    color: #fff;
+}
+
+.projects h1 {
+    font-size: 5rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects__container {
+    background-color: #FFE6E8;
+    border-radius: 30px;
+    margin: 3vh;
+    padding: 2vh;
+    font-size: 2rem;
+}
+
+.projects__item {
+    background-color: #ACD8AA;
+    border-radius: 30px;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    padding: 3vh;
+}
+
+.projects__item h2 {
+    font-size: 2.5rem;
+    padding: 1.5rem;
+    margin: 1.2rem;
+}
+
+.projects__item p {
+    font-size: 1.8rem;
+    padding: 1.5rem;
+    margin: 1.2rem;
+}
+
+@media screen and (max-width: 768px) {
+    .projects__container {
+        font-size: 60px;
+    }
+}

@@ -1,0 +1,35 @@
+/* Footer */
+
+.footer__container {
+    background: #F48498;
+    color: white;
+}
+
+#footer__contact h3 {
+    padding: 1%;
+}
+
+.footer__link--item {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1%;
+}
+
+.footer__contact--item {
+    padding: 0.2%;
+}
+
+#footer__socialmedia {
+    font-size: 3rem;
+}
+
+.trademark {
+    font-size: 0.69rem;
+    text-align: right;
+}
+
+@media screen and (max-width: 768px) {
+    .footer__container {
+        font-size: 60px;
+    }
+}

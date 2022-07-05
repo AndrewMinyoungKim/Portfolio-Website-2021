@@ -1,0 +1,15 @@
+/* Back */
+
+#background {
+    /* background: linear-gradient(to right, #b92b27, #1565C0); */
+    background-color: #f2ccc3;
+    padding: 90px;
+}
+
+#back__container {
+    /* background: linear-gradient(to right, #161616, #6152aa); */
+    background-color: #e78f8e;
+    margin: auto;
+    padding: 2vh;
+    border-radius: 15px;
+}

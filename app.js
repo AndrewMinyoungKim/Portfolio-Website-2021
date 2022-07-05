@@ -13,11 +13,10 @@ menu.addEventListener('click', mobileMenu);
 const highlightMenu = () => {
     const elem = document.querySelector('.highlight')
     const homeMenu = document.querySelector('#home-page')
-    const contactMenu = document.querySelector('#contact-page')
+    const educationMenu = document.querySelector('#education-page')
     const skillsMenu = document.querySelector('#skills-page')
     const experienceMenu = document.querySelector('#experience-page')
     const projectsMenu = document.querySelector('#projects-page')
-    const educationMenu = document.querySelector('#education-page')
     const awardsMenu = document.querySelector('#awards-page')
     const moreMenu = document.querySelector('#more-page')
     let scrollPos = window.scrollY
@@ -29,9 +28,13 @@ const highlightMenu = () => {
         return
     }else if(window.innerWidth > 960 && scrollPos < 1300) {
         removeHighlightMenu()
-        contactMenu.classList.add('highlight')
+        educationMenu.classList.add('highlight')
         return
     }else if(window.innerWidth > 960 && scrollPos < 1700) {
+        removeHighlightMenu()
+        skillsMenu.classList.add('highlight')
+        return
+    }else if(window.innerWidth > 960 && scrollPos < 2400) {
         removeHighlightMenu()
         skillsMenu.classList.add('highlight')
         return
@@ -42,30 +45,24 @@ const highlightMenu = () => {
     }
 };
 
-// const jump = () => {
-//     document.getElementById("#skills-page").scrollIntoView({behavior: 'smooth'});
-// };
-
 window.addEventListener('scroll', highlightMenu)
 window.addEventListener('click', highlightMenu)
 
 const removeHighlightMenu = () => {
     const elem = document.querySelector('.highlight')
     const homeMenu = document.querySelector('#home-page')
-    const contactMenu = document.querySelector('#contact-page')
+    const educationMenu = document.querySelector('#education-page')
     const skillsMenu = document.querySelector('#skills-page')
     const experienceMenu = document.querySelector('#experience-page')
     const projectsMenu = document.querySelector('#projects-page')
-    const educationMenu = document.querySelector('#education-page')
     const awardsMenu = document.querySelector('#awards-page')
     const moreMenu = document.querySelector('#more-page')
 
     homeMenu.classList.remove('highlight')
-    contactMenu.classList.remove('highlight')
+    educationMenu.classList.remove('highlight')
     skillsMenu.classList.remove('highlight')
     experienceMenu.classList.remove('highlight')
     projectsMenu.classList.remove('highlight')
-    educationMenu.classList.remove('highlight')
     awardsMenu.classList.remove('highlight')
     moreMenu.classList.remove('highlight')
 };
@@ -86,17 +83,23 @@ menuLinks.addEventListener('click', hideMobileMenu)
 
 document.getElementById("contact__email__clipboard").onclick = function() {copyClipboard("andrew.minyoung.kim@gmail.com")}
 document.getElementById("contact__phone__clipboard").onclick = function() {copyClipboard("6474668621")}
-document.getElementById("contact__linkedin__clipboard").onclick = function() {copyClipboard("https://www.linkedin.com/in/andrew-minyoung-kim/")}
-document.getElementById("contact__github__clipboard").onclick = function() {copyClipboard("https://github.com/AndrewMinyoungKim")}
+document.getElementById("contact__email__clipboard").onmouseout = function() {clipboardOutFunc()}
+document.getElementById("contact__phone__clipboard").onmouseout = function() {clipboardOutFunc()}
 
 function copyClipboard () {
 
     copyText = arguments[0]
 
+    var tooltip = document.getElementById("myTooltip");
     navigator.clipboard.writeText(copyText).then(() => {
-        window.alert("Link copied to clipboard!")
+        tooltip.innerHTML = "Copied!";
     }, () => {
-        window.alert("Link copy failed :(")
+        window.alert("Link copy failed :(");
     });
 
+}
+
+function clipboardOutFunc() {
+    var tooltip = document.getElementById("myTooltip");
+    tooltip.innerHTML = "Copy to Clipboard";
 }
