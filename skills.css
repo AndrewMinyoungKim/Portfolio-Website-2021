@@ -11,7 +11,7 @@
 
 .skills__container {
     background-color: #FFE6E8;
-    box-shadow: -9px 13px 18px -5px rgba(0,0,0,0.75);
+    box-shadow: -8px 12px 18px -5px rgba(0,0,0,0.75);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
@@ -21,7 +21,7 @@
 
 .skills__card {
     background-color: #ACD8AA;
-    box-shadow: -9px 13px 18px -5px rgba(0,0,0,0.75);
+    box-shadow: -6px 8px 18px -5px rgba(0,0,0,0.75);
     color: #fff;
     margin: 3.5rem;
     padding: 1.2rem;
