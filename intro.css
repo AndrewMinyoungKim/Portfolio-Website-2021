@@ -1,19 +1,25 @@
 /* Intro */
 
-.intro__container {
+.intro {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
-    height: 100%;
-    padding: 40px;
+}
+
+.intro__container {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
 }
 
 .intro__img--container {
     padding: 20px;
     text-align: center;
     background-color: #ACD8AA;
+    box-shadow: -9px 13px 18px -5px rgba(0,0,0,0.75);
     border-radius: 50%;
 }
 
@@ -26,17 +32,8 @@
 .intro__heading {
     font-size: 100px;
     margin-bottom: 24px;
-    background: #fff;  /* fallback for old browsers */
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    font-family: 'Raleway'serif;
-}
-
-.highlight { /*?*/
-    border-bottom: 4px solid rgb(132, 0, 255);
+    color: #fff;
+    /* font-family: 'Raleway'serif; */
 }
 
 /* Intro Mobile Support */
@@ -49,40 +46,60 @@
 
 .contact {
     padding: 5vh;
-    /* display: flex;
-    flex-direction: column; */
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .contact p {
     margin-bottom: 1.5rem;
 }
 
-.contact__container {
+.contact__container, .contact__btn {
     margin: auto;
     max-width: 100%;
-    height: auto;
-    background: #e78f8e;
-    background-size: 100%;
-    /* -webkit-background-clip: text;
-    -moz-background-clip: text; */
-    /* -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent; */
-    font-size: 2rem;
+    font-size: 2.7rem;
     text-decoration: none;
     color: #fff;
 }
 
-.contact__item {
+.contact__item a {
     text-decoration: none;
     color: #fff;
 }
 
-.contact__item:visited {
+.contact__item:visited a {
     text-decoration: none;
     color: #fff;
 }
+
+.contact__btn {
+    width: 100%;
+    background: #ACD8AA;
+    box-shadow: -9px 13px 18px -5px rgba(0,0,0,0.75);
+    border: none;
+    border-radius: 20px;
+    margin-top: 2rem;
+    padding: 5% 15%;
+    transition: all 0.30s;
+}
+
+.contact__btn--container {
+    display: flex;
+}
+
+.contact__btn:hover {
+    background: #96c094;
+    transition: all 0.30s;
+    cursor: pointer;
+}
+
+/* Contact Mobile Support */
+
+@media screen and (max-width: 768px) {
+    .contact__container {
+        font-size: 60px;
+    }
+}
+
+/* Copy to Clipboard message */
 
 .tooltip {
     position: relative;
@@ -121,12 +138,4 @@
 .tooltip:hover .tooltiptext {
     visibility: visible;
     opacity: 1;
-}
-
-/* Contact Mobile Support */
-
-@media screen and (max-width: 768px) {
-    .contact__container {
-        font-size: 60px;
-    }
 }

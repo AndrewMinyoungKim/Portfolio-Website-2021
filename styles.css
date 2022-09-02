@@ -12,10 +12,15 @@
     scroll-margin-top: 80px;
 }
 
+.hidden {
+    display: none;
+}
+
 /* Navbar */
 
 .navbar {
     background-color: #F48498;
+    box-shadow: 0px 8px 18px -5px rgba(0,0,0,0.75);
     height: 80px;
     display: flex;
     justify-content: center;
@@ -56,10 +61,12 @@
     text-decoration: none; /*gets rid of underlines*/
     height: 100%; /*centers words??*/
     transition: all 0.3s ease; /*words slowly come in and zoom in*/
+    border-radius: 30px;
 }
 
 .navbar__links:hover {
     color: #ACD8AA;
+    background-color: #f39ec2;
     /* transition: all 0.3s ease; */
 }
 

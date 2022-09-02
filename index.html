@@ -12,8 +12,7 @@
     <link rel="stylesheet" href="skills.css">
     <link rel="stylesheet" href="experience.css">
     <link rel="stylesheet" href="projects.css">
-    <!-- <link rel="stylesheet" href="distinctions.css">
-    <link rel="stylesheet" href="hobbies.css"> -->
+    <link rel="stylesheet" href="interests.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="icon" type="image/png" href="images/lightbulb.png">
     <link rel="stylesheet" 
@@ -47,6 +46,9 @@
                 <li class="navbar__item">
                     <a href="#projects" class="navbar__links" id="projects-page">Projects</a>
                 </li>
+                <li class="navbar__item">
+                    <a href="#interests" class="navbar__links" id="interests-page">Interests</a>
+                </li>
             </ul>
         </div>
     </nav>
@@ -55,8 +57,10 @@
         <div id="back__container">
             <!-- Intro -->
             <div class="intro" id="home">
+                <div class="intro__title">
+                    <h1 class="intro__heading">Andrew Kim</h1>
+                </div>
                 <div class="intro__container">
-                    <h1 class="intro__heading">Hi! I'm Andrew</h1>
                     <div class="intro__img--container">
                         <img src="images/profile-circle.png" alt="pic" class="intro__img">
                     </div>
@@ -67,11 +71,13 @@
                         <div class="contact__container">
                             <p class="contact__item" id="contact__phone__clipboard"><i class="fa-solid fa-phone"></i>   647 466 8621</p>
                         </div>
-                        <div class="contact__container">
-                            <p class="contact__item"><a href="https://www.linkedin.com/in/andrew-minyoung-kim/" target="blank"><i class="fa-brands fa-linkedin"></i>   linkedin.com/in/andrew-minyoung-kim/</a></p>
-                        </div>
-                        <div class="contact__container">
-                            <p class="contact__item"><a href="https://github.com/AndrewMinyoungKim/" target="blank"><i class="fa-brands fa-github"></i>   github.com/AndrewMinyoungKim/</a></p>
+                        <div class="contact__btn--container">
+                            <div class="contact__container">
+                                <a href="https://www.linkedin.com/in/andrew-minyoung-kim/" target="blank"><button class="contact__btn"><p class="contact__item"><i class="fa-brands fa-linkedin"></i>   LinkedIn</p></button></a>
+                            </div>
+                            <div class="contact__container">
+                                <a href="https://github.com/AndrewMinyoungKim/" target="blank"><button class="contact__btn"><p class="contact__item"><i class="fa-brands fa-github"></i>   GitHub</p></button></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -82,23 +88,30 @@
                 <h1>Education</h1>
                 <div class="education__container">
                     <div class="education__card">
-                        <h2 class="school__name">University of Toronto</h2>
-                        <h3 class="school__time">2018 - 2023</h3>
-                        <p class="school__major">Bachelor of Applied Science - BASc, Computer Engineering</p>
-                        <p class="school__GPA">GPA: 2.88</p>
+                        <div class="education__info">
+                            <h2 class="school__name">University of Toronto</h2>
+                            <h3 class="school__time">2018 - 2023</h3>
+                            <p class="school__major">Bachelor of Applied Science - BASc, Computer Engineering</p>
+                            <p class="school__major">Rotman School of Management Engineering Business Minor</p>
+                            <!-- <p class="school__GPA">GPA: 2.88</p> -->
+                        </div>
+                        <img src="images/uoft-logo.png" alt="UofT logo" id="uoft-logo">
                     </div>
                     <div class="education__card">
-                        <h2 class="school__name">Etobicoke Collegiate Institute</h2>
-                        <h3 class="school__time">2014 - 2018</h3>
-                        <p class="school__major">Ontario Secondary School Diploma</p>
-                        <p class="school__GPA">Average: 95.0%</p>
+                        <div class="education__info">
+                            <h2 class="school__name">Etobicoke Collegiate Institute</h2>
+                            <h3 class="school__time">2014 - 2018</h3>
+                            <p class="school__major">Ontario Secondary School Diploma</p>
+                            <!-- <p class="school__GPA">Average: 95.0%</p> -->
+                        </div>
+                        <img src="images/eci-logo.png" alt="ECI logo" id="eci-logo">
                     </div>
                 </div>
             </div>
 
             <!-- Skills -->
             <div class="skills" id="skills">
-                <h1>Skills</h1>
+                <h1>Skills and Tools</h1>
                 <div class="skills__container">
                     <div class="skills__card">
                         <div class="skills__card__title">
@@ -126,6 +139,14 @@
                     </div>
                     <div class="skills__card">
                         <div class="skills__card__title">
+                            <h3>JavaScript</h3>
+                        </div>
+                        <div class="skills__img">
+                            <img src="images/JavaScript-logo.png" class="skills__png">
+                        </div>
+                    </div>
+                    <div class="skills__card">
+                        <div class="skills__card__title">
                             <h3>HTML</h3>
                         </div>
                         <div class="skills__img">
@@ -142,10 +163,18 @@
                     </div>
                     <div class="skills__card">
                         <div class="skills__card__title">
-                            <h3>JavaScript</h3>
+                            <h3>React</h3>
                         </div>
                         <div class="skills__img">
-                            <img src="images/JavaScript-logo.png" class="skills__png">
+                            <img src="images/react-logo.png" class="skills__png">
+                        </div>
+                    </div>
+                    <div class="skills__card">
+                        <div class="skills__card__title">
+                            <h3>JSON</h3>
+                        </div>
+                        <div class="skills__img">
+                            <img src="images/json-logo.png" class="skills__png">
                         </div>
                     </div>
                     <div class="skills__card">
@@ -158,10 +187,154 @@
                     </div>
                     <div class="skills__card">
                         <div class="skills__card__title">
-                            <h3>React</h3>
+                            <h3>MongoDB</h3>
                         </div>
                         <div class="skills__img">
-                            <img src="images/react-logo.png" class="skills__png">
+                            <img src="images/mongodb-logo.png" class="skills__png">
+                        </div>
+                    </div>
+                    <div class="skills__card">
+                        <div class="skills__card__title">
+                            <h3>Flask</h3>
+                        </div>
+                        <div class="skills__img">
+                            <img src="images/flask-logo.png" class="skills__png">
+                        </div>
+                    </div>
+                    <div class="skills__card">
+                        <div class="skills__card__title">
+                            <h3>C</h3>
+                        </div>
+                        <div class="skills__img">
+                            <img src="images/c-logo.png" class="skills__png">
+                        </div>
+                    </div>
+                    <div class="skills__card">
+                        <div class="skills__card__title">
+                            <h3>C#</h3>
+                        </div>
+                        <div class="skills__img">
+                            <img src="images/cSharp-logo.png" class="skills__png">
+                        </div>
+                    </div>
+                    <div class="skills__card">
+                        <div class="skills__card__title">
+                            <h3>Unity</h3>
+                        </div>
+                        <div class="skills__img">
+                            <img src="images/unity-logo.png" class="skills__png">
+                        </div>
+                    </div>
+                    <div class="skills__card">
+                        <div class="skills__card__title">
+                            <h3>MATLAB</h3>
+                        </div>
+                        <div class="skills__img">
+                            <img src="images/matlab-logo.png" class="skills__png">
+                        </div>
+                    </div>
+                    <div class="skills__card">
+                        <div class="skills__card__title">
+                            <h3>Git</h3>
+                        </div>
+                        <div class="skills__img">
+                            <img src="images/git-logo.png" class="skills__png">
+                        </div>
+                    </div>
+                    <div class="skills__card">
+                        <div class="skills__card__title">
+                            <h3>VS Code</h3>
+                        </div>
+                        <div class="skills__img">
+                            <img src="images/vs-code-logo.png" class="skills__png">
+                        </div>
+                    </div>
+                    <div class="skills__card">
+                        <div class="skills__card__title">
+                            <h3>Visual Studio</h3>
+                        </div>
+                        <div class="skills__img">
+                            <img src="images/visual-studio-logo.png" class="skills__png">
+                        </div>
+                    </div>
+                    <div class="skills__card">
+                        <div class="skills__card__title">
+                            <h3>JetBrains</h3>
+                        </div>
+                        <div class="skills__img">
+                            <img src="images/jetbrains-logo.png" class="skills__png">
+                        </div>
+                    </div>
+                    <div class="skills__card">
+                        <div class="skills__card__title">
+                            <h3>Windows OS</h3>
+                        </div>
+                        <div class="skills__img">
+                            <img src="images/windows-logo.png" class="skills__png">
+                        </div>
+                    </div>
+                    <div class="skills__card">
+                        <div class="skills__card__title">
+                            <h3>MAC OS</h3>
+                        </div>
+                        <div class="skills__img">
+                            <img src="images/mac-logo.png" class="skills__png">
+                        </div>
+                    </div>
+                    <div class="skills__card">
+                        <div class="skills__card__title">
+                            <h3>Linux OS</h3>
+                        </div>
+                        <div class="skills__img">
+                            <img src="images/linux-logo.png" class="skills__png">
+                        </div>
+                    </div>
+                    <div class="skills__card">
+                        <div class="skills__card__title">
+                            <h3>Premiere Pro</h3>
+                        </div>
+                        <div class="skills__img">
+                            <img src="images/adobe-premiere-pro-logo.png" class="skills__png">
+                        </div>
+                    </div>
+                    <div class="skills__card">
+                        <div class="skills__card__title">
+                            <h3>Arduino</h3>
+                        </div>
+                        <div class="skills__img">
+                            <img src="images/arduino-logo.png" class="skills__png">
+                        </div>
+                    </div>
+                    <div class="skills__card">
+                        <div class="skills__card__title">
+                            <h3>Blender</h3>
+                        </div>
+                        <div class="skills__img">
+                            <img src="images/blender-logo.png" class="skills__png">
+                        </div>
+                    </div>
+                    <div class="skills__card">
+                        <div class="skills__card__title">
+                            <h3>Wireshark</h3>
+                        </div>
+                        <div class="skills__img">
+                            <img src="images/wireshark-logo.png" class="skills__png">
+                        </div>
+                    </div>
+                    <div class="skills__card">
+                        <div class="skills__card__title">
+                            <h3>Multisim</h3>
+                        </div>
+                        <div class="skills__img">
+                            <img src="images/multisim-logo.png" class="skills__png">
+                        </div>
+                    </div>
+                    <div class="skills__card">
+                        <div class="skills__card__title">
+                            <h3>Verilog</h3>
+                        </div>
+                        <div class="skills__img">
+                            <img src="images/verilog-logo.png" class="skills__png">
                         </div>
                     </div>
                 </div>
@@ -177,10 +350,13 @@
                         <h3>Advanced Micro Devices Inc. | May 2021 - April 2022</h3>
                         <ul class="experience__detail">
                             <li class="experience__bullet__item">
-                                <p>did stuff</p>
+                                <p>Scripted/Automated testcase benchmarks for GPUs</p>
                             </li>
                             <li class="experience__bullet__item">
-                                <p>did more stuff</p>
+                                <p>Verified and tested GPU driver performance on Host and Virtual Machines</p>
+                            </li>
+                            <li class="experience__bullet__item">
+                                <p>Repaired driver and OS related issues on Windows and Linux</p>
                             </li>
                         </ul>
                     </div>
@@ -189,22 +365,25 @@
                         <h3>University of Toronto | September 2020 - December 2020</h3>
                         <ul class="experience__detail">
                             <li class="experience__bullet__item">
-                                <p>did stuff</p>
+                                <p>Taught first year students engineering practices and ethics </p>
                             </li>
                             <li class="experience__bullet__item">
-                                <p>did more stuff</p>
+                                <p>Mentored students on development of structured work habits</p>
+                            </li>
+                            <li class="experience__bullet__item">
+                                <p>Demonstrated strong strategies for proper time management</p>
                             </li>
                         </ul>
                     </div>
                     <div class="experience__card">
-                        <h2>Software Engineering Intern</h2>
-                        <h3>Advanced Micro Devices Inc. | June 2020 - August 2020</h3>
+                        <h2>Information Technology Support</h2>
+                        <h3>Deloitte | June 2020 - August 2020</h3>
                         <ul class="experience__detail">
                             <li class="experience__bullet__item">
-                                <p>did stuff</p>
+                                <p>Constructed Unity game to be distributed to clients as a virtual introduction to the Deloitte Greenhouse vision and operations</p>
                             </li>
                             <li class="experience__bullet__item">
-                                <p>did more stuff</p>
+                                <p>Built a voice recognition program on Raspberry Pi that can create events, YouTube search, display weather, etc. simulating a smart mirror program</p>
                             </li>
                         </ul>
                     </div>
@@ -213,10 +392,22 @@
                         <h3>Rogers Communications | June 2019 - August 2019</h3>
                         <ul class="experience__detail">
                             <li class="experience__bullet__item">
-                                <p>did stuff</p>
+                                <p>Contributed to the creation of a control panel that prevents errors in Rogers’ cable television S4M broadcasting system</p>
                             </li>
                             <li class="experience__bullet__item">
-                                <p>did more stuff</p>
+                                <p>Created Jira, Trello, Microsoft Teams, Slack, and Confluence groups and analyzed them for the VP of Media & Corporate IT to review and present</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="experience__card">
+                        <h2>Team Leader</h2>
+                        <h3>Engineering Strategies and Practices UofT | September 2018 - December 2018</h3>
+                        <ul class="experience__detail">
+                            <li class="experience__bullet__item">
+                                <p>Used haptic technology to design a theoretical feature within a navigation application to enhance the experience of users with visual impairment</p>
+                            </li>
+                            <li class="experience__bullet__item">
+                                <p>Delegated tasks and facilitated and lead discussions among team members</p>
                             </li>
                         </ul>
                     </div>
@@ -228,12 +419,143 @@
                 <h1>Personal Projects</h1>
                 <div class="projects__container">
                     <div class="projects__item">
-                        <h2><i class="fa-solid fa-headphones-simple"></i>   Music Production Website</h2>
-                        <p>Created a website for learning music production in React</p>
+                        <h2><i class="fa-brands fa-github projects__png"></i>   Github Fork Tracker</h2>
+                        <h3>Python, Flask, MongoDB, React | September 2022 - Present</h3>
+                        <p>Building website to track forks for each github repository and eliminate duplicate efforts using algorithms for target user</p>
+                        <p>Hosting server on React Front-End and Python/Flask and MongoDB backend. Full Stack Development</p>
                     </div>
                     <div class="projects__item">
-                        <h2><i class="fa-solid fa-chess"></i>   Chess</h2>
-                        <p>Implemented complete chess game in Python</p>
+                        <h2><i class="fa-solid fa-bezier-curve projects__png"></i>   Data Structures and Algorithms Comparison Guide</h2>
+                        <h3>Python, C++, Java | August 2022 - Present</h3>
+                        <p>Exploring implementation of several algorithms (sort, search, etc.) and data structures (linked list, queue, tree, etc.)</p>
+                        <p>Comparing speeds of any combination of an algorithm/data structure pair. Practicing in different OOP languages</p>
+                    </div>
+                    <div class="projects__item">
+                        <h2><i class="fa-solid fa-headphones-simple projects__png"></i>   Music Production Website</h2>
+                        <h3>React, HTML/CSS/JavaScript | July 2022 - Present</h3>
+                        <p>Creating Information Website with navigation bar, side chapter bar for each page, exploring all areas of Music Production (DAW, VST, Effects, Mixing, Mastering, etc.)</p>
+                        <p>Facilitate beginners ramp up to introduce concepts effectively</p>
+                        <p>Website for learning music production in React, applying my HTML, CSS, and JavaScript skills as well as using Express</p>
+                    </div>
+                    <div class="projects__item">
+                        <h2><i class="fa-solid fa-chess projects__png"></i>   Chess</h2>
+                        <h3>Python | June 2022 - July 2022</h3>
+                        <p>Created properly functioning two player chess in Pygame with special moves, proper notation, and algorithm for moving/checking logic</p>
+                        <p>Incorporated use of data structures such as dictionaries, sets, tuples, etc. and neatly organizes components of game in separate classes (board, movement, check)</p>
+                        <p>Implemented complete chess game in Python with proper Chess logic, with sound effects, highlighting move choices, chosen piece, checks, checkmates, stalemates, and incorporating Promotions, Castling, and En Passants</p>
+                    </div>
+                    <div class="projects__item">
+                        <h2><i class="fa-solid fa-gamepad projects__png"></i>   Connect 4</h2>
+                        <h3>Python | May 2022</h3>
+                        <p>Designed point and click connect 4 in python using pygame graphics to emulate original connect 4 board game</p>
+                        <p>Refined math and logic to calculate every possible win</p>
+                    </div>
+                    <div class="projects__item">
+                        <h2><i class="fa-solid fa-brain projects__png"></i>   Mastermind</h2>
+                        <h3>Python | May 2022</h3>
+                        <p>Hit-N-Blow Masterming point and click created in Pygame, randomized 4 color combination among 6 options, indicates number of hits and number of blows for 8 rounds</p>
+                    </div>
+                    <div class="projects__item">
+                        <h2><i class="fa-solid fa-x projects__png"></i>   Tic Tac Toe</h2>
+                        <h3>Python, Java, C++, C, JavaScript, React | April 2022 - May 2022</h3>
+                        <p>Implemented Tic Tac Toe in several languages to exercise gamut of programming skills and capabilities</p>
+                        <p>Used class-based programming in the OOP languages to neatly separate code into classes of each component of game</p>
+                        <p>Modular programming used for the other languages</p>
+                    </div>
+                    <div class="projects__item">
+                        <h2><i class="fa-solid fa-chess-board projects__png"></i>   Checkers</h2>
+                        <h3>Python | March 2022 - April 2022</h3>
+                        <p>Produced point and click checkers in python using pygame graphics</p>
+                        <p>Used math and logic to account for legal moves, king pieces, and double jumps, triple jumps, etc.</p>
+                    </div>
+                    <div class="projects__item">
+                        <h2><i class="fa-solid fa-meteor projects__png"></i>   Space Invaders</h2>
+                        <h3>C++ | October 2019 - November 2019</h3>
+                        <p>Worked on space invaders game to allow for space ship rotation around to shoot randomized linked list asteroids homing in on ship</p>
+                        <p>Completes game level once all asteroids destroyed in linked list</p>
+                    </div>
+                    <div class="projects__item">
+                        <h2><i class="fa-solid fa-circle projects__png"></i>   Othello</h2>
+                        <h3>C | February 2019 - March 2019</h3>
+                        <p>Generated an othello/reversi game in C with a computer AI algorithm programmed to prioritize corners followed by edges</p>
+                    </div>
+                    <div class="projects__item">
+                        <h2><i class="fa-solid fa-anchor projects__png"></i>   Battleship</h2>
+                        <h3>Java | April 2018 - June 2018</h3>
+                        <p>Made battleship game in java using turtle display with front page</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interests -->
+            <div class="interests" id="interests">
+                <h1>Interests, Hobbies, and Goals</h1>
+                <div class="interests__container">
+                    <div class="interests__item">
+                        <h2>Goals and Ambitions</h2>
+                        <p>My goal is to apply my knowledge in the software engineering field, develop my skills, and become a stronger problem-solver to create meaningful work.</p>
+                        <p>I hope to achieve success and make great strides in wherever I go and learn from every experience I capture. I want to excel and pursue greater heights with my potential for innovation and creativity.</p>
+                    </div>
+                    <div class="interests__item">
+                        <h2>Technical and Soft Skill Interests</h2>
+                        <ul class="interests__list" id="interests__tech">
+                            <li>Coding (in general)</li>
+                            <li>Object Oriented Programming</li>
+                            <li>Algorithms</li>
+                            <li>Data Structures</li>
+                            <li>Full Stack</li>
+                            <li>Software</li>
+                            <li>Artificial Intelligence</li>
+                            <li>Machine Learning</li>
+                            <li>Big Data</li>
+                            <li>Data Science</li>
+                            <li>Cryptocurrency</li>
+                            <li>Blockchain</li>
+                            <li>Cybersecurity/Computer Security</li>
+                            <li>Leadership and Creative Problem-Solving</li>
+                            <li>Management and Business Astuteness</li>
+                            <li>Learning How To Market</li>
+                        </ul>
+                    </div>
+                    <div class="interests__item">
+                        <h2>Music</h2>
+                        <ul class="interests__list" id="interests__music">
+                            <li>Guitar</li>
+                            <li>Piano</li>
+                            <li>Singing</li>
+                            <li>Music Production</li>
+                            <li>Audio Engineering</li>
+                            <li>Ukulele</li>
+                            <li>Bass Guitar</li>
+                            <li>Harmonica</li>
+                            <li>Kalimba</li>
+                        </ul>
+                    </div>
+                    <div class="interests__item">
+                        <h2>Sports</h2>
+                        <ul class="interests__list" id="interests__sports">
+                            <li>Soccer</li>
+                            <li>Golf</li>
+                            <li>Basketball</li>
+                            <li>Running</li>
+                            <li>Hiking</li>
+                            <li>Badminton</li>
+                            <li>Snowboarding</li>
+                            <li>Kayaking</li>
+                            <li>Fishing</li>
+                        </ul>
+                    </div>
+                    <div class="interests__item">
+                        <h2>Other</h2>
+                        <ul class="interests__list">
+                            <li>Cooking</li>
+                            <li>Video Games (Nintendo)</li>
+                            <li>Super Smash Bros. Melee</li>
+                            <li>Chess</li>
+                            <li>Backgammon</li>
+                            <li>Mancala</li>
+                            <li>Gostop/Hanafuda</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -253,9 +575,9 @@
                 <div class="footer__link--item" id="footer__socialmedia">
                     <a href="https://www.linkedin.com/in/andrew-minyoung-kim/" class="social__icon" target="_blank"><i class="fab fa-linkedin"></i></a>
                     <a href="https://github.com/AndrewMinyoungKim" class="social__icon" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="/page" class="social__icon" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <!-- <a href="/page" class="social__icon" target="_blank"><i class="fab fa-facebook"></i></a>
                     <a href="/page" class="social__icon" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="/page" class="social__icon" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="/page" class="social__icon" target="_blank"><i class="fab fa-twitter"></i></a> -->
                 </div>
             </div>
         </div>

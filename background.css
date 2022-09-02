@@ -9,6 +9,7 @@
 #back__container {
     /* background: linear-gradient(to right, #161616, #6152aa); */
     background-color: #e78f8e;
+    box-shadow: 0px 0px 18px 8px rgba(0,0,0,0.75);
     margin: auto;
     padding: 2vh;
     border-radius: 15px;

@@ -2,25 +2,15 @@
 
 .experience h1 {
     text-align: center;
-    margin: auto;
-    max-width: 100%;
-    height:auto;
-    background: white;  /* fallback for old browsers */
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
+    color: white;
     font-size: 5rem;
     padding: 2rem;
 }
 
 .experience__container {
     text-align: center;
-    margin: auto;
-    max-width: 100%;
-    height: auto;
     background-color: #FFE6E8;
+    box-shadow: -9px 13px 18px -5px rgba(0,0,0,0.75);
     border-radius: 30px;
     margin: 3vh;
     padding: 2vh;
@@ -28,11 +18,12 @@
 }
 
 .experience__card {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
     background-color: #ACD8AA;
+    box-shadow: -9px 13px 18px -5px rgba(0,0,0,0.75);
     color: #fff;
     border-radius: 30px;
     max-width: 1400px;
@@ -44,7 +35,11 @@
 }
 
 .experience__detail {
-    list-style-type: none;
+    /* list-style-type: none; */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem 6rem;
+    list-style-type: square;
 }
 
 @media screen and (max-width: 768px) {

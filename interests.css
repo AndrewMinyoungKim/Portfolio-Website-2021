@@ -1,0 +1,69 @@
+/* Interests */
+
+.interests {
+    color: #fff;
+}
+
+.interests h1 {
+    font-size: 5rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.interests__container {
+    background-color: #FFE6E8;
+    border-radius: 30px;
+    box-shadow: -9px 13px 18px -5px rgba(0,0,0,0.75);
+    margin: 3vh;
+    padding: 2vh;
+    font-size: 2rem;
+}
+
+.interests__item {
+    background-color: #ACD8AA;
+    box-shadow: -9px 13px 18px -5px rgba(0,0,0,0.75);
+    border-radius: 30px;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    padding: 3vh;
+}
+
+.interests__item h2 {
+    font-size: 2.5rem;
+    padding: 1.2rem;
+    margin: 1rem;
+}
+
+.interests__item p {
+    font-size: 1.7rem;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.interests__list {
+    list-style-position: outside;
+    list-style-type: square;
+    padding: 0 5rem;
+}
+
+#interests__tech {
+    list-style-image: url("./images/database-bullet.svg") #fff;
+}
+
+#interests__music {
+    list-style-image: url("./images/music-note.svg") #fff;
+}
+
+#interests__sports {
+    color: white;
+    list-style-image: url("./images/soccer-ball.svg") #fff;
+}
+
+@media screen and (max-width: 768px) {
+    .interests__container {
+        font-size: 60px;
+    }
+}
