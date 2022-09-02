@@ -11,7 +11,7 @@
 }
 
 .projects__container {
-    background-color: #FFE6E8;
+    background-color: #509d99;
     box-shadow: -8px 12px 18px -5px rgba(0,0,0,0.75);
     border-radius: 30px;
     margin: 3vh;
@@ -20,7 +20,7 @@
 }
 
 .projects__item {
-    background-color: #ACD8AA;
+    background-color: #836fb4;
     box-shadow: -8px 12px 18px -5px rgba(0,0,0,0.75);
     border-radius: 30px;
     max-width: 1400px;

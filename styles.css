@@ -19,7 +19,7 @@
 /* Navbar */
 
 .navbar {
-    background-color: #F48498;
+    background-color: #000;
     box-shadow: 0px 8px 18px -5px rgba(0,0,0,0.75);
     height: 80px;
     display: flex;
@@ -61,12 +61,12 @@
     text-decoration: none; /*gets rid of underlines*/
     height: 100%; /*centers words??*/
     transition: all 0.3s ease; /*words slowly come in and zoom in*/
-    border-radius: 30px;
+    border-radius: 3px;
 }
 
 .navbar__links:hover {
-    color: #ACD8AA;
-    background-color: #f39ec2;
+    /* color: #836fb4; */
+    background-color: #509d99;
     /* transition: all 0.3s ease; */
 }
 
@@ -95,11 +95,11 @@
         opacity: 1;
         transition: all 0.5s ease;
         z-index: -1;
-        background: #F48498;
+        background: #000;
     }
 
     .navbar__menu.active {
-        background: #F48498;
+        background: #000;
         top: 100%;
         opacity: 1;
         transition: all 0.5s ease;
