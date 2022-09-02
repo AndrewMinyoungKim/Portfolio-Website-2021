@@ -32,16 +32,9 @@
 .intro__heading {
     font-size: 100px;
     margin-bottom: 24px;
+    padding-top: 3rem;
     color: #fff;
     /* font-family: 'Raleway'serif; */
-}
-
-/* Intro Mobile Support */
-
-@media screen and (max-width: 768px) {
-    .intro__heading {
-        font-size: 60px;
-    }
 }
 
 .contact {
@@ -86,7 +79,7 @@
 }
 
 .contact__btn:hover {
-    background: #96c094;
+    background: #509d99;
     transition: all 0.30s;
     cursor: pointer;
 }
@@ -138,4 +131,16 @@
 .tooltip:hover .tooltiptext {
     visibility: visible;
     opacity: 1;
+}
+
+/* Intro Mobile Support */
+
+@media screen and (max-width: 768px) {
+    .intro__heading {
+        font-size: 60px;
+    }
+
+    .intro {
+        flex-direction: column;
+    }
 }
