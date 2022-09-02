@@ -1,6 +1,7 @@
 /* Intro */
 
 .intro {
+    font-weight: bold;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -42,6 +43,7 @@
 }
 
 .contact p {
+    font-weight: bold;
     margin-bottom: 1.5rem;
 }
 
