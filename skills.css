@@ -87,10 +87,26 @@
     .skills__card {
         margin: 1.5rem;
         padding: 1.2rem;
+        transform: scale(0.525);
     }
 
     .skills__container {
         grid-template-columns: 1fr 1fr;
+        font-size: 60px;
+        padding: 0;
+        margin-top: 0;
+        transform: scale(0.9);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .skills__card {
+        margin: 1.5rem;
+        padding: 1.2rem;
+    }
+
+    .skills__container {
+        grid-template-columns: 1fr;
         font-size: 60px;
     }
 }

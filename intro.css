@@ -86,11 +86,57 @@
     cursor: pointer;
 }
 
-/* Contact Mobile Support */
+/* Intro Mobile Support */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1350px) {
     .contact__container {
+        font-size: 2rem;
+    }
+
+    .intro__container {
+        flex-direction: column;
+    }
+    
+    .intro__heading {
         font-size: 60px;
+    }
+
+    .contact__btn--container {
+        justify-content: space-between;
+    }
+
+    .contact__container {
+        margin: 0 2rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .intro {
+        font-size: 1rem;
+    }
+    .contact__container {
+        font-size: 1rem;
+    }
+
+    .intro__container {
+        flex-direction: column;
+    }
+    
+    .intro__heading {
+        font-size: 60px;
+    }
+
+    .contact__btn--container {
+        justify-content: space-between;
+    }
+
+    .contact__container {
+        margin: 0 2rem;
+    }
+
+    .intro__img--container {
+        display: none;
     }
 }
 
@@ -133,16 +179,4 @@
 .tooltip:hover .tooltiptext {
     visibility: visible;
     opacity: 1;
-}
-
-/* Intro Mobile Support */
-
-@media screen and (max-width: 768px) {
-    .intro__heading {
-        font-size: 60px;
-    }
-
-    .intro {
-        flex-direction: column;
-    }
 }
